@@ -1,8 +1,8 @@
 function square(sideLen: number): Shape {
+    let internalSideLen = sideLen;
     return {
-        sideLen,
         computeArea: function (): number {
-            return sideLen * sideLen
+            return internalSideLen * internalSideLen
         }
     }
 }
